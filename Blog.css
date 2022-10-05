@@ -1,0 +1,263 @@
+* {padding: 0; margin: 0;}
+
+body {background-color: white;}
+
+/* header */
+header{
+    position: sticky; top: 0; z-index: 1;
+    background-color: white;
+    height: 100px; line-height: 100px;
+    font-family: Verdana; font-size: 14px;
+}
+/* hleft */
+header .hleft ul li{float: left; list-style: none;}
+
+header .hleft img {margin: 25px 0 0 15px;}
+
+header .hleft ul li a{
+    text-decoration: none;
+    color: black; margin-right: 35px;
+}
+header .hleft ul li a:hover {color: #219ebc; transition: color 0.5s ease;}
+
+header .hleft ul li ul{display: none; position: absolute; background-color: white;}
+header .hleft ul li:hover > ul{display: block;}
+
+header .hleft ul li ul li{
+    float: none; position: relative;
+    height: 45px; line-height: 45px;
+}
+header .hleft ul li ul li a{margin-left: 10px;}
+header .hleft ul li ul li a:hover{color: black;}
+
+/* right */
+header .hright{background-color: white; float: right; position: relative;}
+header .hright section img, p, li{float: left; list-style: none;}
+header .hright section img{width: 15px; height: auto; margin-top: 27px; padding: 15px;}
+
+header .hright .hsearch{
+    float: left;
+    background-color: #ffb703;
+    height: 100px; line-height: 100px; width: 80px;
+    margin-left: 10px;
+}
+header .hright .hsearch img{margin-left: 18px;}
+/* end of header */
+
+
+
+/* picture */
+.picture{
+    background-image: url("Gambar/html_blog/blog.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.picture section{text-align: center; margin: auto; padding: 170px; color: #000033;}
+.picture section h1{font-size: 100px; font-family: perpetua;}
+.picture section h3{font-size: 20px; font-family: Verdana; font-weight: 500; margin-top: 10px;}
+/* end of picture  */
+
+
+
+/* container - article */
+.white{
+    width: 1100px; height: auto; margin: auto;
+    font-family: Verdana; overflow: hidden;
+    background-color: white; 
+}
+
+/* left */
+.white .left{
+    width: 700px; height: auto; padding: 100px 0;
+    float: left; overflow: hidden;
+    font-family: Verdana;
+}
+
+.white .left .foto{
+    width: 700px; float: left;
+    box-shadow: 0px 1px 10px gainsboro;
+    padding-bottom: 30px; margin-bottom: 60px;
+}
+.white .left .foto img{width: 750px; height: auto;}
+
+.white .left .foto .date{
+    width: 80px; padding: 10px;
+    background-color: #ffb703;
+    text-align: center; font-size: 30px; border-radius: 5px;
+    position: relative;
+    bottom: 55px; left: 40px;
+}
+.white .left .foto .date:hover{background: none;}
+.white .left .foto .date:hover a{color: #ffb703;}
+.white .left .foto .date a{text-decoration: none; color: white;}
+
+.white .left .foto .text{margin-top: -15px;}
+.white .left .foto .text a{
+    text-decoration: none;
+    color: #023047;
+    font-weight: 600; font-size: 22px;
+    margin-left: 35px;
+}
+.white .left .foto .text a:hover{color: #ffb703;}
+.white .left .foto .text p{
+    width: 620px; line-height: 1.8;
+    color: gray; font-size: 14px;
+    margin-top: 15px; margin-left: 35px;
+}
+
+.white .left .foto .text .com{float: left; margin-top: 25px;}
+.white .left .foto .text .com i{margin-right: 10px;}
+.white .left .foto .text .com a{font-size: 13px; font-weight: 500;}
+
+.white .left .page{margin-left: 285px;}
+.white .left .page a{
+    color: #023047;
+    padding: 10px 13px; margin-left: 3px;
+    font-size: 15px;
+    text-decoration: none; text-align: center;
+    border: 1px solid gainsboro;
+}
+.white .left .page a:hover:not(.active){background: gainsboro; color: #ffb703;}
+.white .left .page a.active{background: #219ebc; color: white;}
+
+/* right */
+.white .right{
+    width: 330px; height: auto;
+    float: right; padding: 100px 0;
+    font-family: Verdana;
+}
+
+
+.white .right .search{margin-top: 25px; margin-bottom: 80px;}
+.white .right .search .sbox{
+    width: 288px; padding: 20px;
+    border: 1px solid gainsboro;
+}
+.white .right .search .sbox input{
+    background-color: transparent; border: none; margin-left: 10px;
+    color: gray; font-size: 14px; 
+}
+.white .right .search .sbox button[type=button]{
+    background-color: transparent; border: none;
+    color: gray; float: right;
+    position: relative;
+    bottom: 28px; left: 155px;
+}
+.white .right .search .sbox button[type=button]:hover{background-color: transparent;}
+.white .right .search button[type=button]{
+    width: 330px; padding: 20px 0;
+    margin-top: -8px;
+    background-color: #219ebc; color: white;
+    border: none;
+}
+.white .right .search button[type=button]:hover{background-color: #ffb703; transition: background-color 0.5s ease;}
+
+
+.white .right .category{margin-bottom: 80px;}
+.white .right .title{
+    font-size: 20px; font-weight: 600; color: #023047;
+    border-bottom: 1px solid gainsboro;line-height: 50px;
+    margin-bottom: 15px;
+}
+.white .right .category .c{
+    border-bottom: 1px solid gainsboro;line-height: 50px;
+    font-size: 15px;
+}
+.white .right .category .c:hover a{color: #ffb703;}
+.white .right .category .c a{text-decoration: none; color: gray;}
+
+
+.white .right .recentPost{margin-bottom: 80px;}
+.white .right .recentPost section{margin-top: 35px;}
+.white .right .recentPost .foto{overflow: hidden; margin-bottom: 20px;}
+.white .right .recentPost .foto img{float: left; width: 80px;}
+.white .right .recentPost .foto .desc{
+    float: left; width: 230px;
+    margin-top: 20px; margin-left: 20px;
+}
+.white .right .recentPost .foto .desc a{font-size: 14px; color: #023047; text-decoration: none;}
+.white .right .recentPost .foto .desc a:hover{color: #ffb703;}
+.white .right .recentPost .foto .desc p{font-size: 12px; color: gray; margin-top: 3px;}
+
+
+.white .right .tag{overflow: hidden; margin-bottom: 80px;}
+.white .right .tag section{margin-top: 35px;}
+.white .right .tag li{ 
+    margin: 4px; padding: 4px 15px;
+    border: 1px solid gainsboro;
+}
+.white .right .tag a{text-decoration: none; color: gray; font-size: 13px;}
+.white .right .tag li:hover{background-color: #ffb703; transition: background-color 0.5s ease;}
+.white .right .tag li:hover a{color: white; transition: color 0.5s ease;}
+
+.white .right .igfeed{margin-bottom: 80px;}
+.white .right .igfeed section{margin-left: 10px; margin-top: 35px;}
+.white .right .igfeed img{width: 90px; height: auto; margin: 5px;}
+
+
+.white .right .news input{
+     width: 303px; padding: 18px 0;
+     border: 1px solid gainsboro; border-radius: 0px;
+     margin-top: 25px;
+}
+.white .right .news input.inputEmail{padding-left: 25px;}
+.white .right .news button[type=button]{
+    width: 330px; padding: 18px 0; margin-top: 20px;
+    border-radius: 0px; border: none;
+    background-color: #219ebc; color: white;
+}
+.white .right .news button[type=button]:hover{background-color: #ffb703; transition: background-color 0.5s ease;}
+/* end if container - article */
+ 
+
+
+
+/* footer */
+.gray {background-color: #023047;}
+
+footer{
+    width: 1100px; height: auto; margin: auto;
+    font-family: Verdana; font-size: 14px;
+    overflow: hidden; color: silver;
+}
+
+footer nav ul li{list-style: none; margin-bottom: 15px;}
+footer nav ul li a{text-decoration: none; color: silver;}
+footer nav ul li a:hover{color: #ffb703; transition: color 1s ease;}
+footer section{margin-top: 100px; margin-bottom: 40px; color: white; font-size: 20px;}
+
+footer .f1{float: left; width: 250px; margin-top: 90px; margin-left: 10px;}
+footer .f1 img{margin-bottom: 10px; margin-top: 10px;}
+footer .f1 p{margin-bottom: 15px;}
+
+footer .f1 .sosmed {float: left; width: 340px;}
+footer .f1 .sosmed img{
+    float: left; position: relative;
+    width: 15px; height: auto;
+    margin: 40px 20px 0 10px;
+    background-color: silver;
+}
+footer .f1 .sosmed img:hover{background-color: #ffb703; transition: background-color 1s ease;}
+
+footer .f2{float: left; width: 80px; margin-left: 100px; margin-right: 90px;}
+
+footer .f3{float: left; width: 250px; margin-right: 40px;}
+footer .f3 .f3left {width: 60px; float: left;}
+footer .f3 .f3right {width: 100px; float: right;}
+
+footer .f4{float: left; width: 280px; position: relative;}
+footer .f4 section{margin-left: 15px;}
+footer .f4 img{
+    float: right; width: 70px; height: auto;
+    border-radius: 5px;
+}
+footer .f4 .instUp img{margin-left: 15px;}
+footer .f4 .instDown img{margin-left: 15px;}
+
+footer .copyright{
+    margin-top: 450px;
+    height: 70px; line-height: 70px;
+    border-top: 1px solid silver;
+}
+footer .copyright p{text-align: center; margin-left: 430px;}
+/* end of footer */

@@ -1,0 +1,145 @@
+* {padding: 0; margin: 0;}
+
+body {background-color: white;}
+
+/* header */
+header{
+    position: sticky; top: 0; z-index: 1; 
+    background-color: white;
+    height: 100px; line-height: 100px;
+    font-family: Verdana; font-size: 14px;
+}
+/* hleft */
+header .hleft ul li{float: left; list-style: none;}
+
+header .hleft img {margin: 25px 0 0 15px;}
+
+header .hleft ul li a{
+    text-decoration: none;
+    color: black; margin-right: 35px;
+}
+header .hleft ul li a:hover {color: #219ebc; transition: color 0.5s ease;}
+
+header .hleft ul li ul{display: none; position: absolute; background-color: white;}
+header .hleft ul li:hover > ul{display: block;}
+
+header .hleft ul li ul li{
+    float: none; position: relative;
+    height: 45px; line-height: 45px;
+}
+header .hleft ul li ul li a{margin-left: 10px;}
+header .hleft ul li ul li a:hover{color: black;}
+
+/* right */
+header .hright{background-color: white; float: right; position: relative;}
+header .hright section img, p, li{float: left; list-style: none;}
+header .hright section img{width: 15px; height: auto; margin-top: 27px; padding: 15px;}
+
+header .hright .hsearch{
+    float: left;
+    background-color: #ffb703;
+    height: 100px; line-height: 100px; width: 80px;
+    margin-left: 10px;
+}
+header .hright .hsearch img{margin-left: 18px;}
+/* end of header */
+
+
+
+/* picture */
+.picture{
+    background-image: url("Gambar/html_contact/contact.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.picture section{text-align: center; margin: auto; padding: 170px; color: #000033;}
+.picture section h1{font-size: 100px; font-family: perpetua;}
+.picture section h3{font-size: 20px; font-family: Verdana; font-weight: 500;}
+/* end of picture  */
+
+
+
+/* container - article */
+.white{
+    width: 1100px; height: auto; margin: auto;
+    font-family: Verdana; overflow: hidden; 
+}
+
+.white iframe{width: 1100px; height: 450px; margin-top: 140px;}
+
+.white .left {width: 700px; float: left; margin-top: 50px; margin-bottom: 100px;}
+.white .left h1{margin-bottom: 20px; color: #023047;}
+.white .left textarea{
+    width: 635px; height: 150px;
+    font-family: Arial; font-size: 15px; color: gray;
+    padding: 10px;
+}
+.white .left input {width: 639px; height: 40px; margin-top: 35px; font-size: 15px; padding-left: 15px;}
+.white .left .nameEmail {float: left;}
+.white .left .nameEmail input{width: 290px; margin-right: 35px;}
+button[type=button] {
+    width: 110px; padding: 15px; margin-top: 50px;
+    color: white; background-color: #219ebc; 
+    border: none; border-radius: 2px;
+    font-family: Arial; font-size: 15px;
+}
+.left button:hover{background-color: #ffb703;transition: background 0.8s ease;}
+
+.white .right{width: 250px; float: left; margin: 150px 0 0 70px;}
+.white .right section{margin-bottom: 40px;}
+.white .right img{width: 35px; height: auto;}
+.white .right h4{margin: -40px 0 5px 50px; color: #023047;}
+.white .right p{margin-left: 50px; color: gray; font-size: 14px;}
+/* end if container - article */
+
+
+
+/* footer */
+.gray {background-color: #023047;}
+
+footer{
+    width: 1100px; height: auto; margin: auto;
+    font-family: Verdana; font-size: 14px;
+    overflow: hidden; color: silver;
+}
+
+footer nav ul li{list-style: none; margin-bottom: 15px;}
+footer nav ul li a{text-decoration: none; color: silver;}
+footer nav ul li a:hover{color: #ffb703; transition: color 1s ease;}
+footer section{margin-top: 100px; margin-bottom: 40px; color: white; font-size: 20px;}
+
+footer .f1{float: left; width: 250px; margin-top: 90px; margin-left: 10px;}
+footer .f1 img{margin-bottom: 10px; margin-top: 10px;}
+footer .f1 p{margin-bottom: 15px;}
+
+footer .f1 .sosmed {float: left; width: 340px;}
+footer .f1 .sosmed img{
+    float: left; position: relative;
+    width: 15px; height: auto;
+    margin: 40px 20px 0 10px;
+    background-color: silver;
+}
+footer .f1 .sosmed img:hover{background-color: #ffb703; transition: background-color 1s ease;}
+
+footer .f2{float: left; width: 80px; margin-left: 100px; margin-right: 90px;}
+
+footer .f3{float: left; width: 250px; margin-right: 40px;}
+footer .f3 .f3left {width: 60px; float: left;}
+footer .f3 .f3right {width: 100px; float: right;}
+
+footer .f4{float: left; width: 280px; position: relative;}
+footer .f4 section{margin-left: 15px;}
+footer .f4 img{
+    float: right; width: 70px; height: auto;
+    border-radius: 5px;
+}
+footer .f4 .instUp img{margin-left: 15px;}
+footer .f4 .instDown img{margin-left: 15px;}
+
+footer .copyright{
+    margin-top: 450px;
+    height: 70px; line-height: 70px;
+    border-top: 1px solid silver;
+}
+footer .copyright p{text-align: center; margin-left: 430px;}
+/* end of footer */

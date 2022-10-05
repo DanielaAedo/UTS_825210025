@@ -1,0 +1,391 @@
+* {padding: 0; margin: 0;}
+
+body{background-color: white;}
+.gray{background-color: #023047}
+
+/* header */
+header{
+    position: sticky; top: 0; z-index: 1;
+    background-color: white;
+    height: 100px; line-height: 100px;
+    font-family: Verdana; font-size: 14px;
+}
+/* hleft */
+header .hleft ul li{float: left; list-style: none;}
+
+header .hleft img {margin: 25px 0 0 15px;}
+
+header .hleft ul li a{
+    text-decoration: none;
+    color: black; margin-right: 35px;
+}
+header .hleft ul li a:hover {color: #219ebc; transition: color 0.5s ease;}
+
+header .hleft ul li ul{display: none; position: absolute; background-color: white;}
+header .hleft ul li:hover > ul{display: block;}
+
+header .hleft ul li ul li{
+    float: none; position: relative;
+    height: 45px; line-height: 45px;
+}
+header .hleft ul li ul li a{margin-left: 10px;}
+header .hleft ul li ul li a:hover{color: black;}
+
+/* right */
+header .hright{background-color: white; float: right; position: relative;}
+header .hright section img, p, li{float: left; list-style: none;}
+header .hright section img{width: 15px; height: auto; margin-top: 27px; padding: 15px;}
+
+header .hright .hsearch{
+    float: left;
+    background-color: #ffb703;
+    height: 100px; line-height: 100px; width: 80px;
+    margin-left: 10px;
+}
+header .hright .hsearch img{margin-left: 18px;}
+/* end of header */
+
+
+
+/* picture */
+.picture{
+    background-image: url("Gambar/home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.picture section{text-align: center; width: 600px; margin: auto; padding: 200px; color: #000033;}
+.picture section h1{font-size: 100px; font-family: perpetua;}
+.picture section h3{font-size: 20px; font-family: Verdana; margin-bottom: 30px;}
+.picture section li{
+    padding: 18px 30px; border-radius: 5px;
+    font-family: Verdana; font-weight: normal;
+    background-color: #219ebc;
+    margin-left: 220px;
+}
+.picture section li a{text-decoration: none; color: #000033; font-weight: 600;}
+.picture section li:hover{background-color: #ffb703; transition: background-color 0.8s ease;}
+.picture section li:hover a{color: white; transition: color 0.8s ease}
+/* end of picture  */
+
+
+
+/* where to go */
+.wtg{
+    width: 1100px; height: auto; margin: auto; position: relative;
+    padding-top: 50px; padding-bottom: 50px;
+    color: white; overflow: hidden;
+}
+.wtg label{
+    font-family: Verdana; font-size: 20px; font-weight: 600; 
+    margin-right: 40px;
+}
+.wtg input{height: 45px; line-height: 45px; width: 200px;}
+.wtg input.inputText{
+    padding-left: 5px; font-family: Verdana; font-size: 14px; margin-right: 10px;
+    border: 1px solid white; border-radius: 5px;
+    background-color: transparent; color: white;
+}
+.wtg input.inputText::placeholder{color: white;}
+.wtg input.date{
+    padding-left: 5px; font-family: Verdana; font-size: 14px; margin-right: 10px;
+    border: 1px solid white; border-radius: 5px; 
+    background-color: transparent; color: white;
+}
+.wtg select{
+    height: 49px; line-height: 49px; width: 200px; font-family: Verdana; font-size: 14px; margin-right: 10px;
+    border: 1px solid white; border-radius: 5px;
+    background-color: transparent; color: white;
+}
+.wtg select option{color: black;}
+.wtg button[type=button]{
+    padding: 15px 35px; 
+    background-color: #ffb703; color: white;
+    font-size: 18px; font-weight: 600;
+    border-radius: 5px; border: none; 
+}
+.wtg button[type=button]:hover{background-color: #219ebc; transition: background 1s ease;}
+/* end of where to go */
+
+
+
+/* popular destination */
+.popDest{
+    width: 1100px; height: auto; margin: auto;
+    padding-top: 100px; padding-bottom: 100px;text-align: center;
+    font-family: Verdana; color: #000033;
+    overflow: hidden;
+    /*background-color: beige;*/
+}
+.popDest h1{font-weight: 500; font-size: 35px;}
+.popDest p{width: 600px; font-size: 16px; line-height: 1.8; margin: 20px 0 50px 250px; color: gray;}
+
+.popDest .foto{
+    width: 360px; float: left; position: relative; 
+    margin-left: 5px; margin-bottom: 20px;
+}
+.popDest .foto:hover {transform: translate(0px, -8px); transition: transform 0.5s ease;}
+
+.popDest .foto img{width: 330px; height: auto; margin-top: 10px;}
+
+.popDest .foto .dest{
+    text-align: left;
+    position: absolute; width: 360px; height: auto;
+    bottom: 30px; left: 40px;
+    color: black;
+}
+.popDest .foto .dest a{
+    text-decoration: none; font-size: 12px; font-weight: 500;
+    color: white; background-color: #219ebc;
+    padding: 7px 15px; margin-left: 10px;
+    border-radius: 20px;
+}
+.popDest .foto:hover h3{color: #ffb703; transition: color 1s ease;}
+.popDest .foto:hover a{
+    background-color: #ffb703;
+    transition: color 1s ease; transition: background-color 1s ease;
+}
+/* end of popular destination */
+
+
+
+/* subscribe */
+.subs{
+    background-image: url("Gambar/subs.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.subs section{
+    width: 1100px; height: auto; margin: auto;
+    padding: 60px 0; overflow: hidden;
+    font-family: Verdana; color: #000033;
+}
+.subs section .left{width: 360px; float: left; margin-left: 120px;}
+.subs section .left h3{font-size: 22px; margin-bottom: 10px;}
+.subs section .left p{line-height: 1.5;}
+
+.subs section .right{margin: 15px 0 0 50px; float: left;}
+.subs section .right input.inputEmail{
+    height: 45px; line-height: 45px; width: 300px;
+    padding-left: 10px; font-family: Verdana; font-size: 14px; margin-right: 5px;
+    border: 1px solid white; border-radius: 5px;
+}
+.subs section .right button[type=button]{
+    padding: 15px 30px; 
+    background-color: #ffb703; color: white;
+    font-size: 16px; font-weight: 600;
+    border-radius: 5px; border: none; 
+}
+.subs section .right button[type=button]:hover{background-color: #219ebc; transition: background-color 0.8s ease;}
+/* end of subscribe */
+
+
+
+/* popular places */
+.popPlace{
+    width: 1100px; height: auto; margin: auto; padding: 130px 0 200px 0;
+    text-align: center; font-family: Verdana;
+    overflow: hidden;
+    /*background-color: beige;*/
+}
+.popPlace h1{font-weight: 500; font-size: 35px; color: #023047;}
+.popPlace p{width: 600px; margin: 20px 0 50px 250px; color: gray; line-height: 1.8;}
+.popPlace .gallery{margin-left: 10px;}
+
+.popPlace .gallery .foto{
+    float: left; width: 320px; margin: 20px; 
+    background-color: white;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+.popPlace .gallery .foto:hover{
+    box-shadow: 0px 7px 15px silver; transition: box-shadow 1s ease-out;
+}
+.popPlace .gallery .foto:hover .price a{background-color: #ffb703; transition: background-color 0.5s ease;}
+.popPlace .gallery .foto:hover .ket a{color: #ffb703; transition: color 0.5s ease;}
+
+.popPlace .gallery .foto .price a{
+    float: left;
+    text-decoration: none; 
+    color: white; background-color: #219ebc;
+    padding: 10px 20px; border-radius: 30px;
+    position: relative;
+    bottom: 170px; left: 15px;
+}
+
+.popPlace .gallery .foto img{
+    width: 320px;
+    border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+
+.popPlace .gallery .foto .ket{
+    text-align: left; margin-top: 25px;
+}
+.popPlace .gallery .foto .ket a{
+    text-decoration: none; font-size: 20px;
+    color: #023047;
+    margin-left: -67px;
+}
+
+.popPlace .gallery .foto .ket section{
+    color: gray; font-size: 14px;
+    margin: 10px 0 20px 20px;
+}
+
+.popPlace .gallery .foto .review .left{
+    width: 220px; height: auto;
+    float: left;
+    margin-left: -12px;
+}
+.popPlace .gallery .foto .review .left img{
+    width: 12px; height: auto;
+    margin-left: -5px;
+}
+.popPlace .gallery .foto .review .left a{
+    text-decoration: none; font-size: 14px;
+    color: gray;
+}
+
+.popPlace .gallery .foto .review .right{
+    width: 100px; height: auto;
+    float: right;
+}
+.popPlace .gallery .foto .review .right img{
+    width: 12px; height: auto;
+}
+.popPlace .gallery .foto .review .right a{
+    text-decoration: none; font-size: 14px;
+    color: gray;
+}
+
+.popPlace .more{float: left; margin: 80px 0 0 470px;}
+.popPlace .more a{
+    text-decoration: none; font-weight: 600; font-size: 15px;
+    background-color: #ffb703; color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.popPlace .more a:hover{background-color: #219ebc; transition: background-color 0.8s ease;}
+/* end of popular places */
+
+
+/* video */
+.vid{
+    background-image: url("Gambar/vid.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.vid section{
+    width: 1100px; height: auto; margin: auto;
+    padding: 250px 0; overflow: hidden;
+}
+.vid section h1{font-size: 70px; font-family: perpetua; text-align: center; color: white;}
+.vid section img{
+    width: 100px; height: auto; margin-top: 60px; margin-left: 505px;
+    clip-path: circle(50%);
+    position: relative;
+}
+/* end of video */
+
+
+
+.bottom{
+    width: 1100px; height: auto; margin: auto;
+    /*background-color: beige;*/
+    overflow: hidden;
+    font-family: Verdana; padding: 150px 0; color: sa;
+}
+
+/* 3 picture */
+.bottom .first{margin-left: 5px;}
+.bottom .first .foto{float: left; width: 360px; text-align: center;}
+.bottom .first .foto img{width: 64px; height: auto; margin: 0 0 25px 0;}
+.bottom .first .foto h2{width: 320px; margin: 0 0 10px 25px;}
+.bottom .first .foto p{width: 320px; margin: 0 0 0 25px; color: gray; line-height: 1.7;}
+/* end of 3 picture */
+
+
+
+/* people */
+.bottom .second{padding-top: 350px; padding-left: 200px;}
+.bottom .second .foto{float: left;}
+.bottom .second .foto img{
+    width: 120px; height: auto;
+    clip-path: circle(50%);
+    position: relative;
+    margin-left: 280px; margin-bottom: -15px;
+}
+.bottom .second .foto .quote img{
+    width: 25px; height: auto; padding: 12px;
+    background-color: #219ebc;
+    position: relative;
+    left: 85px; bottom: 30px;
+}
+.bottom .second .foto p{
+    width: 700px; text-align: center; margin-top: 10px;
+    font-family: Verdana; line-height: 1.7;
+}
+/* end of people */
+
+
+
+/* recent trips */
+.bottom .third{padding-top: 350px;}
+.bottom .third h1{text-align: center; margin-bottom: 70px; color: #023047;}
+.bottom .third .foto {float: left; width: 360px;}
+.bottom .third .foto img{width: 330px; height: auto; margin: 0 0 15px 25px; border-radius: 5px;}
+.bottom .third .foto .date{margin: 0 0 10px 25px; color: gray;}
+.bottom .third .foto li{margin: 0 0 0 25px; list-style: none;}
+.bottom .third .foto li a{color: #023047; text-decoration: none; font-size: 20px;}
+.bottom .third .foto:hover > li a{color: #ffb703; transition: color 0.3s ease;}
+/* end of recent trips */
+
+
+
+/* footer */
+footer{
+    width: 1100px; height: auto; margin: auto;
+    font-family: Verdana; font-size: 14px;
+    overflow: hidden; color: silver;
+}
+
+footer nav ul li{list-style: none; margin-bottom: 15px;}
+footer nav ul li a{text-decoration: none; color: silver;}
+footer nav ul li a:hover{color: #ffb703; transition: color 1s ease;}
+footer section{margin-top: 100px; margin-bottom: 40px; color: white; font-size: 20px;}
+
+footer .f1{float: left; width: 250px; margin-top: 90px; margin-left: 10px;}
+footer .f1 img{margin-bottom: 10px; margin-top: 10px;}
+footer .f1 p{margin-bottom: 15px;}
+
+footer .f1 .sosmed {float: left; width: 340px;}
+footer .f1 .sosmed img{
+    float: left; position: relative;
+    width: 15px; height: auto;
+    margin: 40px 20px 0 10px;
+    background-color: silver;
+}
+footer .f1 .sosmed img:hover{background-color: #ffb703; transition: background-color 1s ease;}
+
+footer .f2{float: left; width: 80px; margin-left: 100px; margin-right: 90px;}
+
+footer .f3{float: left; width: 250px; margin-right: 40px;}
+footer .f3 .f3left {width: 60px; float: left;}
+footer .f3 .f3right {width: 100px; float: right;}
+
+footer .f4{float: left; width: 280px; position: relative;}
+footer .f4 section{margin-left: 15px;}
+footer .f4 img{
+    float: right; width: 70px; height: auto;
+    border-radius: 5px;
+}
+footer .f4 .instUp img{margin-left: 15px;}
+footer .f4 .instDown img{margin-left: 15px;}
+
+footer .copyright{
+    margin-top: 450px;
+    height: 70px; line-height: 70px;
+    border-top: 1px solid silver;
+}
+footer .copyright p{text-align: center; margin-left: 430px;}
+/* end of footer */
